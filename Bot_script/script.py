@@ -1,7 +1,7 @@
 #BOT TOKEN
-f = open("token.txt","r")
-botToken = f.read()
-f.close()
+botToken = ""
+with open("token.txt","r") as tokenFile:
+    botToken = tokenFile.read()
 
 #DISCORD CHANNELS
 channels={}
